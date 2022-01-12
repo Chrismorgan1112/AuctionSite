@@ -19,10 +19,6 @@
 9. Run the web using `php artisan serve` and voila it's ready to run!
 
 ## Created By
-2301860154 - Jonathan Kristanto
-
 2301870350 - Chrismorgan Shintaro
 
 Source : https://stackoverflow.com/questions/38437072/setup-laravel-project-after-cloning
-
-For the purpose of COMP6681001 - Web Programming Lab Final Project
