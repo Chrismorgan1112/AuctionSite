@@ -15,7 +15,7 @@
                     @endforeach
                 </select>
                 <input type="text" class="form-control col-5 mr-4" id="search-query" name="search-query" value="{{ old('search-query') }}">
-                <button type="submit" class="btn btn-md btn-primary col-1">Search</button>
+                <button type="submit" class="btn btn-md btn-dark col-1">Search</button>
             </div>
         </div>
     </form>
@@ -41,9 +41,9 @@
                         @endif
                         @if (Auth::user()->role == 'admin')
                             <a href="/delete-product/{{ $prod->product_id }}" class="btn btn-danger mb-2">Delete Product</a>
-                            <a href="{{ url('/update-product') }}" class="btn btn-danger mb-2">Update Product</a>
+                            <a href="{{ url('/update-product') }}" class="btn btn-primary mb-2">Update Product</a>
                         @endif
-                        <a href="{{ route('productDetail', $prod->product_id) }}" class="btn btn-primary">Product Detail</a>
+                        <a href="{{ route('productDetail', $prod->product_id) }}" class="btn btn-dark">Product Detail</a>
                         </div>
                     </div>
                     @endforeach
@@ -68,7 +68,7 @@
                         @else
                             <p class="text-danger">Close Bid</p>
                         @endif
-                        <a href="{{ route('productDetail', $prod->product_id) }}" class="btn btn-primary">Product Detail</a>
+                        <a href="{{ route('productDetail', $prod->product_id) }}" class="btn btn-dark">Product Detail</a>
                         </div>
                     </div>
                     @endforeach

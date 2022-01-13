@@ -42,7 +42,7 @@ class ProductController extends Controller
         $date = date('Y-m-d H:i',strtotime($date . "+1 days"));
         $validatedInput =  $this->validate($request, [
             'category' => ['required', 'gt:0'],
-            'title' => ['required', 'min:5', 'max:25'],
+            'title' => ['required', 'min:5'],
             'description' => ['required', 'min:10'],
             'price' => ['required', 'numeric', 'min:1000'],
             'end_date'=>['required', 'AfterOrEqual:'.$date],
@@ -115,8 +115,8 @@ class ProductController extends Controller
     {
         $validatedInput =  $this->validate($request, [
             'category' => ['required'],
-            'title' => ['required', 'min:5', 'max:25'],
-            'description' => ['required', 'min:10', 'max:100'],
+            'title' => ['required', 'min:5'],
+            'description' => ['required', 'min:10'],
             'price' => ['required', 'numeric', 'min:1000', 'max:10000000'],
             'status'=> ['required']
         ]);
@@ -129,8 +129,8 @@ class ProductController extends Controller
             $date = date('Y-m-d H:i',strtotime($date . "+1 days"));
             $validatedInput =  $this->validate($request, [
                 'category' => ['required'],
-                'title' => ['required', 'min:5', 'max:25'],
-                'description' => ['required', 'min:10', 'max:100'],
+                'title' => ['required', 'min:5'],
+                'description' => ['required', 'min:10'],
                 'price' => ['required', 'numeric', 'min:1000', 'max:10000000'],
                 'status'=> ['required'],
                 'end_date'=>['required','AfterOrEqual:'.$date]

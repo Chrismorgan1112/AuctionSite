@@ -10,7 +10,7 @@
 <div class="main-div container col-3 text-center">
     <main class="form-register">
 
-        <h1>REGISTER</h1>
+        <h1 class="mt-5">REGISTER</h1>
         <form method="POST" action="/api/register">
             @csrf
             <div class="form-floating">
@@ -81,12 +81,12 @@
                 @enderror
             </div>
 
-            <button type="submit" class="w-100 btn btn-lg btn-primary register-button mt-2">Register</button>
+            <button type="submit" class="w-100 btn btn-lg btn-danger register-button mt-2">Register</button>
         </form>
 
         <button onclick="location.href = 'home';" class="w-100 btn btn-lg btn-secondary mt-2">Go Back</button>
 
-        <small class="d-block text-center mt-3"> Already have account? <a href="login"> Login Now!</a></small>
+        <small class="d-block text-center mt-3"> Already have account? <a href="login" class="text-danger"> Login Now!</a></small>
 
     </main>
 </div>

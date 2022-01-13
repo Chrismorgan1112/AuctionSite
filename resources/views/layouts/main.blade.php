@@ -15,11 +15,11 @@
     @stack('styles')
     @stack('scripts')
 
-    <title>AuctionSite | Home</title>
+    <title>AuctionSite</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
             <a class="navbar-brand" href="/home">AuctionSite</a>
 
@@ -30,7 +30,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" href="/home">Home</a>
                     </li>
@@ -74,10 +74,6 @@
     </nav>
 
     @yield('content')
-
-    <footer class="page-footer fixed-bottom text-center py-3 mt-5 bg-primary text-white text-center">
-        <small>&copy AuctionSite January 2022</small>
-    </footer>
 
     <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 </body>

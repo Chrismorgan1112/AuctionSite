@@ -19,7 +19,7 @@
     @endif
 
     <main class="form-signin center-form  text-center">
-        <h1 class="h3 my-3 fw-normal">Login Page</h1>
+        <h1 class="mt-5">LOGIN</h1>
         <form action="/login" method="POST">
             @csrf
             <div class="form-floating">
@@ -55,11 +55,11 @@
                 </div>
             </div>
 
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+            <button class="w-100 btn btn-lg btn-danger" type="submit">Login</button>
         </form>
 
         <button class="w-100 mt-1 btn btn-lg btn-secondary" onclick="location.href = 'home';">Go Back</button>
-        <small class="d-block text-center mt-3"> Not Registered? <a href="register"> Register Now!</a></small>
+        <small class="d-block text-center mt-3"> Not Registered? <a href="register" class="text-danger"> Register Now!</a></small>
     </main>
 </div>
 @endsection
