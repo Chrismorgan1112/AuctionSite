@@ -18,14 +18,13 @@
 8. Run `php artisan storage:link`
 9. Run the web using `php artisan serve`
 
-Account for Admin :
+## Account for Admin :
 
 Email : admin@admin.com
 
 Password : 12345678
 
-
-Account for Customer :
+## Account for Customer :
 
 Email : chris@gmail.com
 
