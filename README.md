@@ -34,6 +34,7 @@ Password : 12345678
 ## Created By
 2301870350 - Chrismorgan Shintaro
 
-Note : This auction website is a development of my final project from a web programming laboratory class. So it will have a little resemblance, but overall there are quite big differences.
+## Note 
+This auction website is a development of my final project from a web programming laboratory class. So it will have a little resemblance, but overall there are quite big differences.
 
 Source : https://stackoverflow.com/questions/38437072/setup-laravel-project-after-cloning
