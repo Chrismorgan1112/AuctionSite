@@ -19,11 +19,15 @@
 9. Run the web using `php artisan serve`
 
 Account for Admin :
+
 Email : admin@admin.com
+
 Password : 12345678
 
 Account for Customer :
+
 Email : chris@gmail.com
+
 Password : 12345678
 
 ## Created By
