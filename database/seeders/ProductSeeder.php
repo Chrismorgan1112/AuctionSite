@@ -29,7 +29,7 @@ class ProductSeeder extends Seeder
             [
                 'category_id'=>'1',
                 'product_title'=>'Samsung TV N5001',
-                'product_desc'=>'Rasakan pengalaman menonton yang lebih berkesan dengan Samsung TV N5001, TV LED dengan tipe layar Full HD beresolusi 1920 x 1080pixels.',
+                'product_desc'=>'Rasakan pengalaman menonton yang lebih berkesan dengan Samsung TV N5001',
                 'product_price'=>2300000,
                 'status'=>'close',
                 'image_path'=>'images/Samsung TV N5001.jpg',
@@ -64,7 +64,7 @@ class ProductSeeder extends Seeder
             [
                 'category_id'=>'3',
                 'product_title'=>'Samsung Galaxy A52',
-                'product_desc'=>'Samsung Galaxy A52 merupakan handphone HP dengan kapasitas 4500mAh dan layar 6.5" yang dilengkapi dengan kamera belakang 64 + 12 + 5 + 5MP.',
+                'product_desc'=>'Samsung Galaxy A52 merupakan handphone HP dengan kapasitas 4500mAh dan layar 6.5"',
                 'product_price'=>3500000,
                 'status'=>'close',
                 'image_path'=>'images/Samsung Galaxy A52.jpg',
