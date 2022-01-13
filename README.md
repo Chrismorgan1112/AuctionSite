@@ -14,7 +14,7 @@
 4. Run `php artisan key:generate`
 5. Activate XAMPP, Start Aache & MySQL service. 
 6. Create the DB and configure the `.env`
-7. Run `php artisan migrate:fresh`
+7. Run `php artisan migrate:fresh --seed`
 8. Run `php artisan storage:link`
 9. Run the web using `php artisan serve`
 
