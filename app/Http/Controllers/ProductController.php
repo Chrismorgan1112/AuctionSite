@@ -170,7 +170,8 @@ class ProductController extends Controller
     public function delete($id)
     {
         //
-        Transaction::Where('product_id', $id)->Where('status','bidding')->orWhere('status','cart')->delete();
+        Transaction::Where('product_id', $id)->Where('status','bidding')->delete();
+        Transaction::Where('product_id', $id)->Where('status','cart')->delete();
         Transaction::Where('product_id', $id)->Where('status','purchased')->delete();
         Product::Where('product_id', $id)->delete();
         return redirect()->back();
