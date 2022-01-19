@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Transaction;
 
 class UserController extends Controller
 {
@@ -25,6 +26,7 @@ class UserController extends Controller
 
         if(isset($user)){
             Storage::delete('public/'.$user->image_path);
+            Transaction::Where('user_id',$id)->delete();
             $user->delete();
         }
 

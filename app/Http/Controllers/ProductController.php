@@ -171,6 +171,7 @@ class ProductController extends Controller
     {
         //
         Transaction::Where('product_id', $id)->Where('status','bidding')->orWhere('status','cart')->delete();
+        Transaction::Where('product_id', $id)->Where('status','purchased')->delete();
         Product::Where('product_id', $id)->delete();
         return redirect()->back();
     }
