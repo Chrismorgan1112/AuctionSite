@@ -9,6 +9,7 @@
 
 ## Link Video Presentation
 https://youtu.be/ONjsFidaKek
+(Sorry if the volume is too small, if you can try using a headset)
 
 ## How to run the project After Cloning Project
 1. Run `composer install` to generate depedencies
